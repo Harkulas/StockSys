@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{50F5461B-0D76-4420-849F-A8354589C8B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{F7EDFD29-2951-483C-B557-833808999DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{50F5461B-0D76-4420-849F-A8354589C8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F5461B-0D76-4420-849F-A8354589C8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F5461B-0D76-4420-849F-A8354589C8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7EDFD29-2951-483C-B557-833808999DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EDFD29-2951-483C-B557-833808999DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EDFD29-2951-483C-B557-833808999DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EDFD29-2951-483C-B557-833808999DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

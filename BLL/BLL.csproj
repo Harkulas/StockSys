@@ -45,6 +45,10 @@
     <Compile Include="UserLogin.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonLayer\CommonLayer.csproj">
+      <Project>{f7edfd29-2951-483c-b557-833808999dae}</Project>
+      <Name>CommonLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{e1531645-1cda-415c-b57b-1e2a7936ca60}</Project>
       <Name>DAL</Name>

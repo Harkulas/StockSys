@@ -102,6 +102,10 @@
       <Project>{50f5461b-0d76-4420-849f-a8354589c8b2}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CommonLayer\CommonLayer.csproj">
+      <Project>{f7edfd29-2951-483c-b557-833808999dae}</Project>
+      <Name>CommonLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
