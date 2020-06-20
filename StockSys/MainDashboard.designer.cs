@@ -239,7 +239,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogout.Location = new System.Drawing.Point(56, 354);
+            this.btnLogout.Location = new System.Drawing.Point(56, 352);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(207, 43);
@@ -1053,6 +1053,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            //this.Load += new System.EventHandler(this.MainDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
