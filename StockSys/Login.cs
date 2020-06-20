@@ -44,16 +44,6 @@ namespace StockSys
 
         private void txtLoginUsername_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter && txtLoginUsername.Text != "")
-            //{
-            //    e.Handled = true;
-            //    e.SuppressKeyPress = true;
-            //    txtLoginPassword.Focus();
-            //}
-            //else
-            //{
-            //    ShowErrorMessage("Please Enter Username");
-            //}
 
             if (e.KeyCode == Keys.Enter)
             {
@@ -73,14 +63,6 @@ namespace StockSys
 
         private void txtLoginPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter && txtLoginPassword.Text != "")
-            //{
-            //    e.Handled = true;
-            //    e.SuppressKeyPress = true;
-            //    this.ActiveControl = btnLogin;
-            //    btnLogin.Focus();
-            //}
-
             if (e.KeyCode == Keys.Enter)
             {
                 if (txtLoginPassword.Text == "")
@@ -108,11 +90,10 @@ namespace StockSys
                 if (isValidUser)
                 {
                     ShowErrorMessage("Congratulatons");
-                    MainDashboard mainds = new MainDashboard();
+                    DashboardOne mainds = new DashboardOne();
                     mainds.Show();
                     mainds.FormClosed += Logout;
                     this.Hide();
-                    //MessageBox.Show("Congratulatons");
                 }
                 else
                 {
@@ -126,7 +107,6 @@ namespace StockSys
             else
             {
                 ShowErrorMessage("Please Enter Username and Password !");
-                //MessageBox.Show("Please Enter Username and Password !");
             }
         }
 
@@ -139,15 +119,9 @@ namespace StockSys
 
         private void Login_MouseMove(object sender, MouseEventArgs e)
         {
-            //if (e.Button == MouseButtons.Left)
-            //{
-            //    Point mousePos = Control.MousePosition;
-            //    mousePos.Offset(mouseLocation.X, mouseLocation.Y);
-            //    Location = mousePos;
-            //}
+
         }
 
-        //public Point mouseLocation;
         private void Login_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -157,10 +131,9 @@ namespace StockSys
                 // Checks if Y = 0, if so maximize the form
                 if (this.Location.Y == 0) { this.WindowState = FormWindowState.Maximized; }
             }
-            //mouseLocation = new Point(-e.X, -e.Y);
         }
 
-        private void Logout(object sender,FormClosedEventArgs e)
+        private void Logout(object sender, FormClosedEventArgs e)
         {
             txtLoginUsername.Clear();
             txtLoginPassword.Clear();
